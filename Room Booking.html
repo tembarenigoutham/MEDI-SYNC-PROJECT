@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Room Booking</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Reserve a Room</h2>
+        <form onsubmit="return validateRoomBooking()">
+            <input type="text" id="roomPatientName" placeholder="Patient Name" required>
+            <input type="number" id="roomDays" placeholder="Number of Days" required>
+            <select id="roomType" required>
+                <option value="">Select Room Type</option>
+                <option value="general">General Ward</option>
+                <option value="private">Private Room</option>
+                <option value="icu">ICU</option>
+            </select>
+            <button type="submit">Book Room</button>
+        </form>
+    </div>
+</body>
+</html>

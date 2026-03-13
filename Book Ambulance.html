@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ambulance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Book Ambulance</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Request Ambulance Service</h2>
+        <form onsubmit="return validateAmbulance()">
+            <input type="text" id="ambulanceName" placeholder="Patient Name" required>
+            <input type="tel" id="ambulancePhone" placeholder="Phone Number" required>
+            <textarea id="ambulanceLocation" placeholder="Pickup Location" required></textarea>
+            <button type="submit">Book Ambulance</button>
+        </form>
+    </div>
+</body>
+</html>

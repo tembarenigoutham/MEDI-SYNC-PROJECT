@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Hospital Management System - Signup</header>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form onsubmit="return validateSignup()">
+            <input type="email" id="signupEmail" placeholder="Enter Email" required>
+            <input type="password" id="signupPassword" placeholder="Enter Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
